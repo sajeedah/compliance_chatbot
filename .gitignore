@@ -1,0 +1,30 @@
+# --- Python cache & system files ---
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+*.pyo
+*.pyd
+
+# --- Virtual environments ---
+env/
+venv/
+.venv/
+
+# --- Local config and secrets ---
+.env
+.env.local
+.env.example   # optional keep local copy
+run_chatbot.bat
+config.json
+
+# --- Data & logs ---
+artifacts/
+logs/
+*.log
+
+# --- Notebook checkpoints ---
+notebooks/.ipynb_checkpoints/
+
+# --- Ignore OS files ---
+.DS_Store
+Thumbs.db

@@ -1,0 +1,20 @@
+{"id": "711f2ce8-563f-455a-8f9d-0775bb18fb96", "question": "What does FATF Recommendation 16 require for wire transfers?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "9f76594f-6f07-4418-bf16-deb5349d180f", "question": "Define 'originator information' under FATF Rec 16.", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "eac0e08f-b4c8-483a-9582-9afb15538cad", "question": "What thresholds apply to cross-border wire transfers under Rec 16?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "4735320d-ad8d-4ce7-b769-729364875184", "question": "What does FATF say about beneficiary information in wire transfers?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "fdd08252-d8ff-4f3b-ba9e-c86146b8988d", "question": "When can originator or beneficiary information be missing (if ever)?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "83a45463-5725-4cf2-91ca-aaf71cc1b6f1", "question": "What are the travel rule obligations under FATF Recommendation 16?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "7ae13b93-079f-4c0c-b3d9-7dad94709d01", "question": "What does FATF recommend about domestic wire transfers?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "e46202e0-b838-4d2a-90e2-16140480cfc0", "question": "How should intermediaries handle incomplete wire transfer information?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "806c6bf1-2121-4f83-ba58-28bc1ffaf7c5", "question": "What sanctions apply for non-compliance with the travel rule?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "99999999-aaaa-bbbb-cccc-123456789abc", "question": "What is the purpose of FATF Recommendation 16?", "expected_citation_contains": ["FATF_Recommendations.pdf", "Explanatory_Note_R16.pdf"]}
+{"id": "f0e408f9-32e9-4314-b02b-d597b510d655", "question": "What are VARA’s core rules on Client Money?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "4d4230fb-70e0-435c-9206-2eee13d53d7c", "question": "How must client money be safeguarded under VARA?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "ea4fc6da-a272-4b15-8f43-0ba6bec71171", "question": "Are there segregation requirements for client money under VARA?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "b3c83ce3-bf96-497d-bae2-5a43879b3537", "question": "What disclosures are required to clients about safeguarding?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "5630af25-3e7c-4bb0-b5c9-3e00059def3e", "question": "What records must be kept in relation to client money?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "5f31a319-60dd-44c6-8f58-369f6421c384", "question": "What are escalation or reporting duties when client money is at risk?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "b2bc4e00-d71f-4456-b150-2372bec5aa0b", "question": "How quickly must client money shortfalls be rectified?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "8378f092-40ca-4f2e-af1d-1d391269f744", "question": "What reconciliations are expected for client money accounts?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "924eba38-c2e2-4d29-b63f-1f4be94ce9f9", "question": "What governance controls are required around client money?", "expected_citation_contains": ["VARA_Client_Money.md"]}
+{"id": "70033ce5-8257-429c-88f0-2ad1efd57971", "question": "What audit requirements exist for client money handling?", "expected_citation_contains": ["VARA_Client_Money.md"]}
