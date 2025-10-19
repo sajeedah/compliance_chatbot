@@ -18,7 +18,9 @@ run_chatbot.bat
 config.json
 
 # --- Data & logs ---
-artifacts/
+artifacts/*             # ignore everything in artifacts
+!artifacts/faiss_index/ # EXCEPT the faiss_index folder
+!artifacts/faiss_index/** # allow all files inside faiss_index
 logs/
 *.log
 
