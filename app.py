@@ -108,4 +108,8 @@ if submitted:
 
 # ---------- Footer ----------
 st.write("---")
-st.caption("Tip: Try questions like “Under FATF Rec 16, what info must accompany a wire transfer?” or “How should a VARA firm handle a Client Money shortfall?”")
+st.caption("""
+**Disclaimer:** This tool is for educational and research purposes only. 
+Regulatory rules and guidance are frequently updated, and interpretations may vary. 
+Always verify information against the latest official FATF and VARA publications before making compliance decisions.
+""")
