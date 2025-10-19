@@ -3,12 +3,12 @@
 from __future__ import annotations
 import os
 from pathlib import Path
+import sys
 import streamlit as st
 
-# Make sure Python can import from our src/ folder even if we run from another directory
+# ---------- Ensure we can import from src/ ----------
 PROJECT_ROOT = Path(__file__).resolve().parent
 SRC_DIR = PROJECT_ROOT / "src"
-import sys
 if str(SRC_DIR) not in sys.path:
     sys.path.append(str(SRC_DIR))
 
@@ -21,6 +21,37 @@ st.set_page_config(page_title="ComplianceBot", page_icon="⚖️", layout="cente
 # ---------- Header ----------
 st.title("⚖️ ComplianceBot (FATF + VARA)")
 st.caption("Grounded answers with quotes & citations. If context is missing → bot says 'Insufficient context.'")
+
+# ---------- First-run: ensure FAISS index exists (auto-build if missing) ----------
+from src.ingest import main as ingest_main
+
+paths = Paths()
+faiss_dir = Path(paths.artifacts_dir) / "faiss_index"
+docs_dir = Path(paths.docs_dir)
+
+# Quick sanity check for docs
+required_docs = [
+    docs_dir / "FATF_Recommendations.pdf",
+    docs_dir / "Explanatory_Note_R16.pdf",
+    docs_dir / "VARA_Client_Money.md",
+]
+missing = [str(p.name) for p in required_docs if not p.exists()]
+if missing:
+    st.error(
+        "Required source files are missing in the `docs/` folder:\n\n"
+        + "\n".join(f"- {m}" for m in missing)
+        + "\n\nAdd them to `docs/` in your repo and reload the app."
+    )
+    st.stop()
+
+# Build index only if missing/empty
+if not faiss_dir.exists() or not any(faiss_dir.iterdir()):
+    with st.spinner("Building index from docs (first-time setup, please wait)..."):
+        try:
+            ingest_main()  # builds embeddings + FAISS using files in docs/
+        except Exception as e:
+            st.error(f"Index build failed: {e}")
+            st.stop()
 
 # ---------- Input form ----------
 with st.form("ask_form", clear_on_submit=False):
@@ -68,7 +99,6 @@ if submitted:
 
     # ---------- Audit log ----------
     try:
-        paths = Paths()
         os.makedirs(paths.logs_dir, exist_ok=True)
         log_audit(query, res.citations, paths=paths)
         st.success("Logged to audit trail.")
