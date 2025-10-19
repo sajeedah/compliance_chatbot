@@ -104,9 +104,9 @@ Copy code
 
 OPENAI\_API\_KEY=sk-xxxx
 
-🌐 Live App (after deployment)
+## 🌐 Live App
 
-🔗 Streamlit URL: (will be added after deployment)
+🔗 **ComplianceBot (FATF + VARA)**: https://sajeedah-compliance-chatbot.streamlit.app/
 
 
 
