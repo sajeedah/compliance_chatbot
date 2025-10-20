@@ -17,8 +17,8 @@ class Settings:
     # Embeddings & index
     embedding_model: str = os.getenv("EMBEDDING_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
     index_name: str = os.getenv("INDEX_NAME", "faiss_index")
-    # Retrieval
-    top_k: int = int(os.getenv("TOP_K", "5"))
+    # Retrieval - stable, fewer tokens, prevents rate limit
+    top_k: int = int(os.getenv("TOP_K", "3"))  # reduced from 5 → 3
     min_sim_threshold: float = float(os.getenv("MIN_SIM", "0.30"))
     # LLM
     openai_api_key: str | None = os.getenv("OPENAI_API_KEY")
